@@ -43,11 +43,11 @@ form.addEventListener('submit', (e) => {
 
 
 /*
-// Without using the defer Attribute, we would have to handle the load event of the window object,
+// Without using the defer Attribute in the script tag, we would have to handle the load event of the window object,
 // and the code would look like this: 
 window.addEventListener('load', () => {
 	const $ = id => document.getElementById(id).value;
-    let form = document.getElementById('empForm');
+    	let form = document.getElementById('empForm');
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		console.log('ID: ' + $('id'));
